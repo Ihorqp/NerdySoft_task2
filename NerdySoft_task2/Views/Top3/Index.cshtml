@@ -1,0 +1,52 @@
+﻿@*@model ServiceItem
+    <div>
+        @if (Model.Title!=null)
+        {
+
+        <ul class="big-image-list">
+
+
+                    <li>
+                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@Model.Id">
+                            <img src="~/images/@Model.TitleImagePath" alt="" class="left" />
+                        </a>
+                        <h4>@Model.Title</h4>
+                        <p>@Model.Subtitle</p>
+                    </li>
+
+        </ul>
+        }
+    </div>*@
+
+
+
+@model IEnumerable<ServiceItem>
+
+<div>
+    @if (Model.Any())
+    {
+
+        <ul class="big-image-list">
+            
+            @foreach (ServiceItem entity in Model)
+            {
+
+                    <li>
+                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+                            <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
+                        </a>
+                        <h4>@entity.Title</h4>
+                        @*<p>@entity.Subtitle</p>*@
+                    </li>
+                
+
+
+
+
+
+
+
+            }
+        </ul>
+    }
+</div>

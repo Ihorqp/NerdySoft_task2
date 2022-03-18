@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="bundleconfig.json" />
+    <Content Remove="compilerconfig.json" />
+    <Content Remove="Views\Account\Login.cshtml" />
+    <Content Remove="Views\Home\Contacts.cshtml" />
+    <Content Remove="Views\Home\Index.cshtml" />
+    <Content Remove="Views\Services\Index.cshtml" />
+    <Content Remove="Views\Services\Show.cshtml" />
+    <Content Remove="Views\Shared\Components\Sidebar\Default.cshtml" />
+    <Content Remove="Views\Shared\CssPartial.cshtml" />
+    <Content Remove="Views\Shared\FooterPartial.cshtml" />
+    <Content Remove="Views\Shared\HeaderPartial.cshtml" />
+    <Content Remove="Views\Shared\MetatagsPartial.cshtml" />
+    <Content Remove="Views\Shared\ScriptsPartial.cshtml" />
+    <Content Remove="Views\Shared\SidebarPartial.cshtml" />
+    <Content Remove="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="Views\Account\Login.cshtml" />
+    <None Include="Views\Home\Contacts.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Services\Index.cshtml" />
+    <None Include="Views\Services\Show.cshtml" />
+    <None Include="Views\Shared\Components\Sidebar\Default.cshtml" />
+    <None Include="Views\Shared\CssPartial.cshtml" />
+    <None Include="Views\Shared\FooterPartial.cshtml" />
+    <None Include="Views\Shared\HeaderPartial.cshtml" />
+    <None Include="Views\Shared\MetatagsPartial.cshtml" />
+    <None Include="Views\Shared\ScriptsPartial.cshtml" />
+    <None Include="Views\Shared\SidebarPartial.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.15" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
